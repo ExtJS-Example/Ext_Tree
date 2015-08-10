@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+
+	<servlet>
+		<servlet-name>Tree</servlet-name>
+		<servlet-class>com.magus.action.TreeAction</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>Tree</servlet-name>
+		<url-pattern>/tree</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 带有提示信息 -->
+	<servlet>
+		<servlet-name>Tip</servlet-name>
+		<servlet-class>com.magus.action.TipAction</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>Tip</servlet-name>
+		<url-pattern>/qtip</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 超链接 -->
+	<servlet>
+		<servlet-name>Href</servlet-name>
+		<servlet-class>com.magus.action.HrefAction</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>Href</servlet-name>
+		<url-pattern>/href</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 节点拖放 -->
+	<servlet>
+		<servlet-name>NodeDrop</servlet-name>
+		<servlet-class>com.magus.action.NodeDropAction</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>NodeDrop</servlet-name>
+		<url-pattern>/nodeDrop</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 节点排序 -->
+	<servlet>
+		<servlet-name>TreeSort</servlet-name>
+		<servlet-class>com.magus.action.TreeSortAction</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>TreeSort</servlet-name>
+		<url-pattern>/sort</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 增加复选框 -->
+	<servlet>
+		<servlet-name>Checked</servlet-name>
+		<servlet-class>com.magus.action.CheckedAction</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>Checked</servlet-name>
+		<url-pattern>/checked</url-pattern>
+	</servlet-mapping>
+</web-app>

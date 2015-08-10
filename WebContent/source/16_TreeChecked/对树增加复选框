@@ -1,0 +1,57 @@
+Ext.tree.TreeFilter常用参数：
+
+ClearBlank:如果查询的字符串为空，则执行clear();
+
+autoClear:每次过滤前先执行clear()，否则会在上次执行结果上执行查询。
+
+ 
+
+方法主要是:filter()和filterBy():
+
+filter( String/RegExp value, [Stringattr], [TreeNode startNode] ) : void
+
+Filter the data by a specificattribute.
+
+Parameters:
+
+value : String/RegExp
+
+Either string that the attributevalue should start with or a RegExp to test against the attribute
+
+attr : String
+
+(optional) The attribute passed inyour node's attributes collection. Defaults to "text".
+
+startNode : TreeNode
+
+(optional) The node to start thefilter at.
+
+String/RegExp:要搜索的字符串或正则表达式
+
+String attr:与节点的哪个属性匹配，默认text
+
+startNode:从哪个节点开始过滤。
+
+ 
+
+filterBy( Function fn, [Objectscope] ) : void
+
+Filter by afunction. The passed function will be called with each node in the tree (or fromthe startNode). If a node isfiltered, its children are also filtered.If anode is filtered, its children are also filtered.
+
+Filter by afunction. The passed function will be called with each node in the tree (orfrom the startNode). If the function returns true, the node is kept otherwiseit is filtered. If a node is filtered, its children are also filtered.
+
+Parameters:
+
+ 
+
+fn : Function
+
+The filter function
+
+scope : Object
+
+(optional) Thescope of the function (defaults to the current node)
+
+ 
+
+Filter()和filterBy()函数都会遍历每个节点（如果指定startNode，则从此节点开始）。

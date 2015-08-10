@@ -1,0 +1,3 @@
+TreeLoader在生成节点时会判断数据中的leaf属性, 如果为true, 则会生成TreeNode, 否则会生成AsyncTreeNode.
+
+TreeNode是不会自动去Ajax取值的
